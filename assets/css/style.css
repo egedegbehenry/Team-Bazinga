@@ -14,7 +14,7 @@ html, body{
 
 .header-container {
 	height: 25vh;
-	background-color: darkgray;
+	background-color: rgb(184, 21, 21);
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -32,7 +32,7 @@ html, body{
 
 .title>h1 {
     justify-content: center;
-	color: blue;
+	color: white;
 	font-weight: 700;
 }
 
@@ -41,6 +41,7 @@ html, body{
 	top: 0;
 	left: 20px;
 	justify-content: flex-start;
+    color: white;
 }
 
 .div-rules{
@@ -130,20 +131,20 @@ a#btn-clickme:hover {
 }
 
 #rock:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid rgb(184, 21, 21);
 }
 
 #paper:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid rgb(184, 21, 21);
 }
 #lizard:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid rgb(184, 21, 21);
 }
 #scissors:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid rgb(184, 21, 21);
 }
 #spock:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid rgb(184, 21, 21);
 }
 
 #choose-area {
