@@ -1,4 +1,7 @@
 /* General Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +11,7 @@ html, body{
     width: 90vw;
     overflow-x: hidden;
     margin: auto;
+    
 }
 
 /* ------HEADER & MAIN STYLES-------*/
@@ -33,9 +37,14 @@ html, body{
 .title>h1 {
     justify-content: center;
 	color: white;
+    font-family: "Electrolize", sans-serif;
 	font-weight: 700;
 }
 
+.title>h4 {
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+}
 
 .team-name {
     position: absolute;
@@ -43,6 +52,7 @@ html, body{
 	left: 20px;
 	justify-content: flex-start;
     color: white;
+    font-family: "Electrolize", sans-serif;
 }
 
 .div-rules{
@@ -75,6 +85,9 @@ a#btn-clickme:hover {
 	transition: .5s ease-in-out;
 } 
 
+.btn {
+    font-family: "Electrolize", sans-serif !important;
+}
 
 #rock {
     background: url(/assets/images/rock.png) no-repeat center center;
@@ -154,6 +167,8 @@ a#btn-clickme:hover {
     flex-wrap: wrap;
     margin: 20px 0 20px 0;
     text-align: center;
+    font-family: "Electrolize", sans-serif;
+
 }
 
 /* ------GAME AREA-------*/
@@ -161,6 +176,7 @@ a#btn-clickme:hover {
 .result-section {
 display: flex;
 justify-content: center;
+font-family: "Electrolize", sans-serif;
 }
 
 #result > p {
@@ -199,12 +215,14 @@ margin: auto;
 display: flex;
 justify-content: center;
 text-align: center;
+font-family: "Electrolize", sans-serif;
 }
 
 #reset-button{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    font-family: "Electrolize", sans-serif;
 }
 /* ------SCORE STYLING-------*/
 
