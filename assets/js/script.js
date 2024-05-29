@@ -12,4 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const maxRound = 20;
     let roundsPlayed = 0
 
-    
+    const rules = {
+        rock: { winsAgainst: ['scissors', 'lizard'], image: 'rock.png' },
+        paper: { winsAgainst: ['rock', 'spock'], image: 'paper.png' },
+        scissors: { winsAgainst: ['paper', 'lizard'], image: 'scissors.png' },
+        lizard: { winsAgainst: ['spock', 'paper'], image: 'lizard.png' },
+        spock: { winsAgainst: ['scissors', 'rock'], image: 'spock.png' },
+    };
+
+    let playerScore = 0;
+    let computerScore = 0;
+
+    function getRandomChoice() {
+        return choices[Math.floor(Math.random() * choices.length)];
+    }
+
+    function updateScore() {
+        pScore.textContent = playerScore;
+        cScore.textContent = computerScore;
+    }
