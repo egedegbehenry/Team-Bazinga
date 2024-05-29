@@ -120,6 +120,24 @@ a#btn-clickme:hover {
     cursor: pointer;
 }
 
+#rock:hover {
+    border: 5px solid #7F3333;
+}
+
+#paper:hover {
+    border: 5px solid #7F3333;
+}
+#lizard:hover {
+    border: 5px solid #7F3333;
+}
+#scissors:hover {
+    border: 5px solid #7F3333;
+}
+#spock:hover {
+    border: 5px solid #7F3333;
+}
+
+
 #button-container {
     display: flex;
     justify-content: center;
