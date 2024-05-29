@@ -134,3 +134,17 @@ a#btn-clickme:hover {
 #reset {
     cursor: pointer;
 }
+
+#choose-area, #game-area, #score-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 0;
+}
+
+.selection {
+    text-align: center;
+    margin: auto;
+    width: 170px;
+}
+
