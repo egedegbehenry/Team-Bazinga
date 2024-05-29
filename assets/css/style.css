@@ -1,7 +1,7 @@
 /* ------HEADER & MAIN STYLES-------*/
 
 header {
-	height: 20vh;
+	height: 25vh;
 	background-color: var(--color-blue);
 	display: flex;
 	position: relative;
@@ -64,3 +64,58 @@ a#btn-clickme:hover {
 	transition: .5s ease-in-out;
 } 
 
+
+#rock {
+    background: url(/assets/css/images/rock_360.png) no-repeat center center;
+    background-size: cover;
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+#paper {
+    background: url(/assets/css/images/paper_360.png) no-repeat center center;
+    background-size: cover;
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+#lizard {
+    background: url(/assets/css/images/lizard_360.png) no-repeat center center;
+    background-size: cover;
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+#scissors {
+    background: url(/assets/css/images/scissors_360.png) no-repeat center center;
+    background-size: cover;
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+#spock {
+    background: url(/assets/css/images/spock.png) no-repeat center center;
+    background-size: cover;
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+}
