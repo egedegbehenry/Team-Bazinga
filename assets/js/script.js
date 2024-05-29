@@ -31,3 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
         pScore.textContent = playerScore;
         cScore.textContent = computerScore;
     }
+
+    function determineWinner(playerChoice, computerChoice) {
+        if (playerChoice === computerChoice) {
+            return "It's a tie!";
+        } else if (rules[playerChoice].winsAgainst.includes(computerChoice)) {
+            playerScore++;
+            updateScore();
+            return `You win! ${playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1)} beats ${computerChoice}.`;
+        } else {
+            computerScore++;
+            updateScore();
+            return `You lose! ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)} beats ${playerChoice}.`;
+        }
+    }
