@@ -148,3 +148,43 @@ a#btn-clickme:hover {
     width: 170px;
 }
 
+/* ------GAME AREA-------*/
+
+#result {
+    display: flex;
+    justify-content: center;
+}
+
+#result > p {
+    text-align: center;
+    height: auto;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.game-container > p {
+    text-align: center;
+    margin: 0;
+}
+
+#player-image {
+    border: 2px solid black;
+    border-radius: 80px;
+    margin: 0 10px 0 10px;
+    height: 160px;
+    width: 160px;
+}
+
+#computer-image {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 80px;
+    margin: 0 10px 0 10px;
+    height: 160px;
+    width: 160px;
+}
