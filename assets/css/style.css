@@ -1,12 +1,24 @@
+/* General Styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 90vw;
+    overflow-x: hidden;
+    margin: auto;
+}
+
 /* ------HEADER & MAIN STYLES-------*/
 
-header {
+.header-container {
 	height: 25vh;
-	background-color: var(--color-blue);
+	background-color: darkgray;
 	display: flex;
 	position: relative;
 	flex-direction: column;
-	box-shadow: 0 10px 10px -5px;
+	border-radius: 10px;
 	padding: 3rem 3rem 0 3rem;
 }
 
@@ -14,31 +26,28 @@ header {
 	display: flex;
 	flex-direction: column;
 	height:fit-content;
+    margin: auto;
+    text-align: center;
 }
 
 .title>h1 {
-	display: flex;
     justify-content: center;
-	color: var(--color-light);
-	background-color: var(--color-blue);
+	color: blue;
 	font-weight: 700;
-	/* font-size: 7vh; */
 }
 
 .team-name {
     position: absolute;
-	bottom: 0;
-	left: 0;
+	top: 0;
+	left: 20px;
 	justify-content: flex-start;
 }
 
-.title>h2{
-	display: flex;
-    justify-content: center;
-	color: var(--color-light);
-	background-color: var(--color-blue);
-	font-size: 2vmax;
-	font-weight: 500;
+.div-rules{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    margin-right: 20px;
 }
 
 .div-rules {
@@ -66,7 +75,7 @@ a#btn-clickme:hover {
 
 
 #rock {
-    background: url(/assets/css/images/rock_360.png) no-repeat center center;
+    background: url(/assets/images/rock.png) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
@@ -77,7 +86,7 @@ a#btn-clickme:hover {
 }
 
 #paper {
-    background: url(/assets/css/images/paper_360.png) no-repeat center center;
+    background: url(/assets/images/paper.png) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
@@ -88,7 +97,7 @@ a#btn-clickme:hover {
 }
 
 #lizard {
-    background: url(/assets/css/images/lizard_360.png) no-repeat center center;
+    background: url(/assets/images/lizard.png) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
@@ -99,7 +108,7 @@ a#btn-clickme:hover {
 }
 
 #scissors {
-    background: url(/assets/css/images/scissors_360.png) no-repeat center center;
+    background: url(/assets/images/scissors.png) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
@@ -110,7 +119,7 @@ a#btn-clickme:hover {
 }
 
 #spock {
-    background: url(/assets/css/images/spock.png) no-repeat center center;
+    background: url(/assets/images/spock.png) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
@@ -137,40 +146,19 @@ a#btn-clickme:hover {
     border: 5px solid #7F3333;
 }
 
-
-#button-container {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-#reset-button {
-    margin: 5px;
-    display: inline-block;
-}
-
-#reset {
-    cursor: pointer;
-}
-
-#choose-area, #game-area, #score-area {
+#choose-area {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px 0 20px 0;
-}
-
-.selection {
     text-align: center;
-    margin: auto;
-    width: 170px;
 }
 
 /* ------GAME AREA-------*/
 
-#result {
-    display: flex;
-    justify-content: center;
+.result-section {
+display: flex;
+justify-content: center;
 }
 
 #result > p {
@@ -182,10 +170,7 @@ a#btn-clickme:hover {
     padding: 10px;
 }
 
-.game-container > p {
-    text-align: center;
-    margin: 0;
-}
+
 
 #player-image {
     border: 2px solid black;
@@ -196,8 +181,8 @@ a#btn-clickme:hover {
 }
 
 #computer-image {
-    display: flex;
-    flex-wrap: wrap;
+
+
     align-content: center;
     justify-content: center;
     border: 2px solid black;
@@ -207,6 +192,18 @@ a#btn-clickme:hover {
     width: 160px;
 }
 
+#game-area{
+margin: auto;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+#reset-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 /* ------SCORE STYLING-------*/
 
 .score {
