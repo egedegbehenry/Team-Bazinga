@@ -45,3 +45,35 @@ document.addEventListener("DOMContentLoaded", () => {
             return `You lose! ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)} beats ${playerChoice}.`;
         }
     }
+
+    buttons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            const playerChoice = event.target.id;
+            const computerChoice = getRandomChoice();
+            playerMoveImage.src = `./assets/images/${playerChoice}.png`;
+            playerMoveImage.alt = `${playerChoice}`;
+           computerMoveImage.src = `./assets/images/${computerChoice}.png`;
+            computerMoveImage.alt = `${computerChoice}`; 
+            resultPara.textContent = determineWinner(playerChoice, computerChoice);
+            roundsPlayed++;
+            console.log(roundsPlayed)
+
+            if(roundsPlayed === 10){
+                playerScore = 0;
+                computerScore = 0;
+                updateScore();
+                playerMoveImage.src = './assets/images/rock.png';
+                computerMoveImage.src = './assets/images/rock.png';
+                resultPara.textContent = 'This is the reason why you won or lost!';        
+            };
+        });
+    });
+    resetButton.addEventListener('click', () => {
+        playerScore = 0;
+        computerScore = 0;
+        updateScore();
+        playerMoveImage.src = './assets/images/rock.png';
+        computerMoveImage.src = './assets/images/rock.png';
+        resultPara.textContent = 'This is the reason why you won or lost!';
+    });
+});
