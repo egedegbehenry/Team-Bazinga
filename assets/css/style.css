@@ -119,3 +119,18 @@ a#btn-clickme:hover {
     border: none;
     cursor: pointer;
 }
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#reset-button {
+    margin: 5px;
+    display: inline-block;
+}
+
+#reset {
+    cursor: pointer;
+}
