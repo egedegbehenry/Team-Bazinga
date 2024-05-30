@@ -13,16 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
     let roundsPlayed = 0
 
     const rules = {
-        rock: { winsAgainst: ['scissors', 'lizard'], image: 'rock.png' },
-        paper: { winsAgainst: ['rock', 'spock'], image: 'paper.png' },
-        scissors: { winsAgainst: ['paper', 'lizard'], image: 'scissors.png' },
-        lizard: { winsAgainst: ['spock', 'paper'], image: 'lizard.png' },
-        spock: { winsAgainst: ['scissors', 'rock'], image: 'spock.png' },
+        rock: { winsAgainst: ['scissors', 'lizard'], image: 'rock.jpg' },
+        paper: { winsAgainst: ['rock', 'spock'], image: 'paper.jpg' },
+        scissors: { winsAgainst: ['paper', 'lizard'], image: 'scissors.jpg' },
+        lizard: { winsAgainst: ['spock', 'paper'], image: 'lizard.jpg' },
+        spock: { winsAgainst: ['scissors', 'rock'], image: 'spock.jpg' },
     };
 
     let playerScore = 0;
     let computerScore = 0;
-GIT 
+
+    function getRandomChoice() {
         return choices[Math.floor(Math.random() * choices.length)];
     }
 
@@ -49,9 +50,9 @@ GIT
         button.addEventListener('click', (event) => {
             const playerChoice = event.target.id;
             const computerChoice = getRandomChoice();
-            playerMoveImage.src = `./assets/images/${playerChoice}.png`;
+            playerMoveImage.src = `./assets/images/${playerChoice}.jpg`;
             playerMoveImage.alt = `${playerChoice}`;
-           computerMoveImage.src = `./assets/images/${computerChoice}.png`;
+           computerMoveImage.src = `./assets/images/${computerChoice}.jpg`;
             computerMoveImage.alt = `${computerChoice}`; 
             resultPara.textContent = determineWinner(playerChoice, computerChoice);
             roundsPlayed++;
@@ -62,8 +63,8 @@ GIT
                 computerScore = 0;
                 roundsPlayed = 0
                 updateScore();
-                playerMoveImage.src = './assets/images/rock.png';
-                computerMoveImage.src = './assets/images/rock.png';
+                playerMoveImage.src = './assets/images/rock.jpg';
+                computerMoveImage.src = './assets/images/rock.jpg';
                 resultPara.textContent = 'Choose your move to start - First to 10 wins!';        
             };
         });
@@ -73,8 +74,8 @@ GIT
         computerScore = 0;
         roundsPlayed = 0
         updateScore();
-        playerMoveImage.src = './assets/images/rock.png';
-        computerMoveImage.src = './assets/images/rock.png';
+        playerMoveImage.src = './assets/images/rock.jpg';
+        computerMoveImage.src = './assets/images/rock.jpg';
         resultPara.textContent = 'Choose your move to start - First to 10 wins!';
     });
 
