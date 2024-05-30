@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateScore();
                 playerMoveImage.src = './assets/images/rock.png';
                 computerMoveImage.src = './assets/images/rock.png';
-                resultPara.textContent = 'This is the reason why you won or lost!';        
+                resultPara.textContent = 'Choose your move to start - First to 10 wins!';        
             };
         });
     });
@@ -74,6 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
         updateScore();
         playerMoveImage.src = './assets/images/rock.png';
         computerMoveImage.src = './assets/images/rock.png';
-        resultPara.textContent = 'This is the reason why you won or lost!';
+        resultPara.textContent = 'Choose your move to start - First to 10 wins!';
     });
 });

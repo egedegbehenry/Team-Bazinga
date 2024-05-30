@@ -17,13 +17,14 @@ html, body{
 /* ------HEADER & MAIN STYLES-------*/
 
 .header-container {
-	height: 25vh;
+	height: 20vh;
 	background-color: rgb(240, 14, 14);
 	display: flex;
 	position: relative;
 	flex-direction: column;
 	border-radius: 10px;
 	padding: 3rem 3rem 0 3rem;
+    padding-top: 15px;
 }
 
 .title {
@@ -53,6 +54,7 @@ html, body{
 	justify-content: flex-start;
     color: white;
     font-family: "Electrolize", sans-serif;
+    font-size: small;
 }
 
 .div-rules{
@@ -168,6 +170,8 @@ a#btn-clickme:hover {
     margin: 20px 0 20px 0;
     text-align: center;
     font-family: "Electrolize", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
 
 }
 
@@ -177,6 +181,8 @@ a#btn-clickme:hover {
 display: flex;
 justify-content: center;
 font-family: "Electrolize", sans-serif;
+text-transform: uppercase;
+font-weight: 700;
 }
 
 #result > p {
@@ -219,7 +225,6 @@ font-family: "Electrolize", sans-serif;
 }
 
 #reset-button{
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     font-family: "Electrolize", sans-serif;
@@ -233,5 +238,9 @@ font-family: "Electrolize", sans-serif;
 @media screen and (max-width: 700px) {
     .title>h4, .team-name {
       display: none;
+    }
+
+    .div-rules {
+        display: none;
     }
 }
