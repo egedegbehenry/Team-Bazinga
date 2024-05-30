@@ -112,7 +112,7 @@ a#btn-clickme:hover {
 }
 
 #paper {
-    background: url(/assets/images/paper.jpg) no-repeat center center;
+    background: url(../../assets/images/paper.jpg) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
@@ -123,7 +123,7 @@ a#btn-clickme:hover {
 }
 
 #lizard {
-    background: url(assets/images/lizard.jpg) no-repeat center center;
+    background: url(../../assets/images/lizard.jpg) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
@@ -134,7 +134,7 @@ a#btn-clickme:hover {
 }
 
 #scissors {
-    background: url(/assets/images/scissors.jpg) no-repeat center center;
+    background: url(../../assets/images/scissors.jpg) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
@@ -145,7 +145,7 @@ a#btn-clickme:hover {
 }
 
 #spock {
-    background: url(/assets/images/spock.jpg) no-repeat center center;
+    background: url(../../assets/images/spock.jpg) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
