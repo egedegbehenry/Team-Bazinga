@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let playerScore = 0;
     let computerScore = 0;
-
-    function getRandomChoice() {
+GIT 
         return choices[Math.floor(Math.random() * choices.length)];
     }
 
@@ -58,22 +57,46 @@ document.addEventListener("DOMContentLoaded", () => {
             roundsPlayed++;
             console.log(roundsPlayed)
 
-            if(roundsPlayed === 10){
+            if(roundsPlayed === maxRound){
                 playerScore = 0;
                 computerScore = 0;
+                roundsPlayed = 0
                 updateScore();
                 playerMoveImage.src = './assets/images/rock.png';
                 computerMoveImage.src = './assets/images/rock.png';
-                resultPara.textContent = 'This is the reason why you won or lost!';        
+                resultPara.textContent = 'Choose your move to start - First to 10 wins!';        
             };
         });
     });
     resetButton.addEventListener('click', () => {
         playerScore = 0;
         computerScore = 0;
+        roundsPlayed = 0
         updateScore();
         playerMoveImage.src = './assets/images/rock.png';
         computerMoveImage.src = './assets/images/rock.png';
-        resultPara.textContent = 'This is the reason why you won or lost!';
+        resultPara.textContent = 'Choose your move to start - First to 10 wins!';
     });
+
+        const text = `Team Bazinga Presents...`;
+        const typingElement = document.getElementById('team-name');
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                typingElement.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, 200);
+            } else {
+                setTimeout(() => {
+                    typingElement.textContent = '';
+                    index = 0;
+                    type();
+                }, 2000);
+            }
+        }
+        type();
+    
+
+    
 });

@@ -1,10 +1,13 @@
 /* General Styling */
-*{
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
 
-html, body{
+html,
+body {
     width: 90vw;
     overflow-x: hidden;
     margin: auto;
@@ -13,37 +16,60 @@ html, body{
 /* ------HEADER & MAIN STYLES-------*/
 
 .header-container {
-	height: 25vh;
-	background-color: darkgray;
-	display: flex;
-	position: relative;
-	flex-direction: column;
-	border-radius: 10px;
-	padding: 3rem 3rem 0 3rem;
+    min-height: 25vh;
+    background-color: #FF2800;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 3rem 3rem 0 3rem;
 }
 
+/*  Red - For Heading Background and accents
+#FFFFFF White Background*/
 .title {
-	display: flex;
-	flex-direction: column;
-	height:fit-content;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
     margin: auto;
     text-align: center;
 }
 
+.title>h4 {
+    font-size: smaller;
+    font-family: "Electrolize", sans-serif;
+}
+
 .title>h1 {
     justify-content: center;
-	color: blue;
-	font-weight: 700;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Electrolize", sans-serif;
+    font: weight 200px;
+    ;
+
 }
 
-.team-name {
+#game-rule,
+#team-name {
+    color: white;
+    font-weight: 700;
+    font-family: "Electrolize", sans-serif;
+}
+
+#first-10 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#team-name {
     position: absolute;
-	top: 0;
-	left: 20px;
-	justify-content: flex-start;
+    top: 10px;
+    left: 20px;
+    justify-content: flex-start;
 }
 
-.div-rules{
+.div-rules {
     position: absolute;
     top: 0;
     right: 40px;
@@ -51,27 +77,27 @@ html, body{
 }
 
 .div-rules {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    justify-content: flex-end;
 }
 
 a#btn-clickme.btn {
-	color: var(--color-light);
-	background-color: var(--color-blue);
-	display: flex;
-    
-	border-radius: 0;
-	font-size: 2vmax;
-	font-weight: 500;
-	padding: .5rem;
+    color: var(--color-light);
+    background-color: var(--color-blue);
+    display: flex;
+
+    border-radius: 0;
+    font-size: 2vmax;
+    font-weight: 500;
+    padding: .5rem;
 }
 
 a#btn-clickme:hover {
-	color: var(--color-yellow);
-	transition: .5s ease-in-out;
-} 
+    color: var(--color-yellow);
+    transition: .5s ease-in-out;
+}
 
 
 #rock {
@@ -129,21 +155,29 @@ a#btn-clickme:hover {
     cursor: pointer;
 }
 
+.selection,
+#game-area p {
+    font-weight: 500;
+}
+
 #rock:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid #ff5f1f;
 }
 
 #paper:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid #3691e6;
 }
+
 #lizard:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid #3add19;
 }
+
 #scissors:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid #ff10f0;
 }
+
 #spock:hover {
-    border: 5px solid #7F3333;
+    border: 5px solid #ffff33;
 }
 
 #choose-area {
@@ -152,16 +186,24 @@ a#btn-clickme:hover {
     flex-wrap: wrap;
     margin: 20px 0 20px 0;
     text-align: center;
+    font-family: "Electrolize", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+
 }
 
 /* ------GAME AREA-------*/
 
 .result-section {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Electrolize", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+
 }
 
-#result > p {
+#result>p {
     text-align: center;
     height: auto;
     width: 500px;
@@ -169,7 +211,6 @@ justify-content: center;
     border-radius: 5px;
     padding: 10px;
 }
-
 
 
 #player-image {
@@ -192,20 +233,34 @@ justify-content: center;
     width: 160px;
 }
 
-#game-area{
-margin: auto;
-display: flex;
-justify-content: center;
-text-align: center;
+#game-area {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Electrolize", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+
+
 }
 
-#reset-button{
+#reset-button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
+
 /* ------SCORE STYLING-------*/
 
 .score {
     margin: 0 5px 0 20px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .title>h4,
+    #team-name {
+        display: none;
+    }
 }
