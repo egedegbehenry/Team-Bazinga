@@ -101,7 +101,7 @@ a#btn-clickme:hover {
 
 
 #rock {
-    background: url(../images/rock.jpg) no-repeat center center;
+    background: url((../../assets/images/rock.jpg) no-repeat center center;
     background-size: cover;
     height: 160px;
     width: 160px;
